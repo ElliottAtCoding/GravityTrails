@@ -6,10 +6,24 @@
     <title>Unity WebGL Player | Gravity_Trails</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      #unity-container {
+        position: relative;
+        margin-bottom: 20px; /* Add some space below the Unity container */
+      }
+
+      iframe {
+        display: block;
+        width: 640px;
+        height: 1488px;
+        border: 0;
+        margin: 0 auto; /* Center the iframe */
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -17,7 +31,7 @@
         </div>
       </div>
       
-      <div id="unity-warning"> </div>
+      <div id="unity-warning"></div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
@@ -25,7 +39,7 @@
       </div>
     </div>
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqaIsIr1VsStZyWJP3USG5ILa7UQMb4BA6Ij4daGSAgP7TzQ/viewform?embedded=true" width="640" height="1488" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqaIsIr1VsStZyWJP3USG5ILa7UQMb4BA6Ij4daGSAgP7TzQ/viewform?embedded=true">Loading…</iframe>
 
     <script>
       var container = document.querySelector("#unity-container");
